@@ -1,0 +1,181 @@
+@charset "utf-8";
+@font-face {
+  font-family:"AppleSDGothicNeoB";
+  src:url("../fonts/AppleSDGothicNeoB.ttf");
+}
+@font-face {
+  font-family:"AppleSDGothicNeoL";
+  src:url("../fonts/AppleSDGothicNeoL.ttf");
+}
+@font-face {
+  font-family:"AppleSDGothicNeoM";
+  src:url("../fonts/AppleSDGothicNeoM.ttf");
+}
+@font-face {
+  font-family:"AppleSDGothicNeoR";
+  src:url("../fonts/AppleSDGothicNeoR.ttf");
+}
+
+@font-face {
+  font-family:"HelveticaNeueB";
+  src:url("../fonts/HelveticaNeueLTPro-Bd.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 초기화 */
+html {overflow-y:scroll}
+body {margin:0;padding:0;font-size:0.75em;font-family:'Montserrat','Noto Sans KR', dotum, sans-serif; color:#2a2a2a; overflow-x:hidden;}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0;padding:0;border:0}
+h1, h2, h3, h4, h5, h6 {font-size:1em;font-family:'Noto Sans KR', dotum, sans-serif}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+ul {margin:0;padding:0;list-style:none}
+ol,li,dl,dt,dd {margin:0;padding:0} 
+legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+label, input, button, select, img {vertical-align:middle}
+input, button {margin:0;padding:0;font-family:'Noto Sans KR', dotum, sans-serif;font-size:1em}
+button {cursor:pointer}
+textarea, select {font-family:'Noto Sans KR', dotum, sans-serif;font-size:1em}
+select {margin:0}
+p {margin:0;padding:0;word-break:break-all}
+hr {display:none}
+pre {overflow-x:scroll;font-size:1.1em}
+a {color:#2a2a2a;text-decoration:none}
+
+
+*, :after, :before {
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+input[type=text],input[type=password], textarea {
+-webkit-transition:all 0.30s ease-in-out;
+-moz-transition:all 0.30s ease-in-out;
+-ms-transition:all 0.30s ease-in-out;
+-o-transition:all 0.30s ease-in-out;
+outline:none;
+}
+ 
+input[type=text]:focus,input[type=password]:focus, textarea:focus,select:focus {
+-webkit-box-shadow:0 0 5px #9ed4ff;
+-moz-box-shadow:0 0 5px #9ed4ff;
+box-shadow:0 0 5px #9ed4ff;
+border:1px solid #558ab7 !important;
+}
+ 
+.placeholdersjs {color:#aaa !important}
+
+
+/***************************************************************************************
+****************************************************************************************
+****************************************************************************************/
+input[type="button"] {-webkit-appearance:none;-webkit-border-radius:0;border:none;}
+input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+input[type="checkbox"]{display:none;}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+/*input::-ms-clear { display: none; }*/
+
+/* Select box 스타일 초기화 */ 
+select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+			background: url('/images/icon_seldown00.png') no-repeat 95% 50%;
+}
+/* IE 에서 Select box 화살표 제거 */ 
+select::-ms-expand { display: none; }
+
+
+/*****************************************
+****************************************** core
+******************************************/
+.clearfix:after{content:""; display:block; clear:both;}
+
+.inner_box{position:relative; width:100%; margin: 0 auto;}
+.cen375{position:relative; width:90%; max-width:375px; margin: 0 auto;}
+.cen570{position:relative; width:90%; max-width:570px; margin: 0 auto;}
+.cen768{position:relative; width:90%; max-width:768px; margin: 0 auto;}
+.cen1350{position:relative; width:90%; max-width:1350px; margin: 0 auto;}
+.cen1200{position:relative; width:90%; max-width:1200px; margin: 0 auto;}
+.cen1400{position:relative; width:90%; max-width:1400px; margin: 0 auto;}
+.cen1600{position:relative; width:90%; max-width:1600px; margin: 0 auto;}
+.cen1800{position:relative; width:90%; max-width:1800px; margin: 0 auto;}
+
+.wcen570{position:relative; width:100%; max-width:570px; margin: 0 auto;}
+.wcen768{position:relative; width:100%; max-width:768px; margin: 0 auto;}
+.wcen1200{position:relative; width:100%; max-width:1200px; margin: 0 auto;}
+.wcen1350{position:relative; width:100%; max-width:1350px; margin: 0 auto;}
+.wcen1400{position:relative; width:100%; max-width:1400px; margin: 0 auto;}
+.wcen1800{position:relative; width:100%; max-width:1800px; margin: 0 auto;}
+
+.lcen1800{position:relative; margin: 0 auto; margin-left:5%;}
+
+
+.hide{display:none !important;}
+.sound_only{display:none;}
+.hidden768 {}
+.visible768 {display:none;}
+.hidden570 {}
+.visible570 {display:none;}
+.hidden480 {}
+.visible480 {display:none;}
+
+.ftw100{font-weight:100;}
+.ftw200{font-weight:200;}
+.ftw300{font-weight:300;}
+.ftw400{font-weight:400;}
+.ftw500{font-weight:500;}
+.ftw600{font-weight:600;}
+.ftw700{font-weight:700;}
+.ftw800{font-weight:800;}
+
+.mgb10{margin-bottom:10px;}
+.mgb20{margin-bottom:20px;}
+.mgb30{margin-bottom:30px;}
+.mgb40{margin-bottom:40px;}
+.mgb50{margin-bottom:50px;}
+.mgb60{margin-bottom:60px;}
+.mgb70{margin-bottom:70px;}
+
+.mgt10{margin-top:10px;}
+.mgt20{margin-top:20px;}
+.mgt30{margin-top:30px;}
+.mgt40{margin-top:40px;}
+.mgt50{margin-top:50px;}
+.mgt60{margin-top:60px;}
+.mgt70{margin-top:70px;}
+
+.talign_left{text-align:left !important;}
+.talign_right{text-align:right !important;}
+.talign_center{text-align:center !important;}
+
+.ftc_white{color:#fff;}
+.ftc_black{color:#000;}
+.ftc_2a2a2a{color:#2a2a2a;}
+.main_color{color:#fc91a6;}
+
+
+.h100{height:100%;}
+
+.ulli00 li{float:left;}
+.ulli00 li .inbox{}
+.ulli00 a{display:block;}
+
+.ulli00 .img_wr{}
+.ulli00 .img_wr img{width:100%;}
+
+.ulli02 li{width:50%; margin-right:0;}
+.ulli03 li{width:33.333%; margin-right:0;}
+.ulli04 li{width:25%; margin-right:0;}
+.ulli05 li{width:20%; margin-right:0;}
+.ulli00 li:last-child{ margin-right:0;}
+
+
+#container_wr{min-height:600px;}
