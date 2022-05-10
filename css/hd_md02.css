@@ -304,3 +304,27 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #main_banner_wr .view_btn:hover .icon-container .icon--left {transform: translate(65%,-50%); opacity: 1;}
 
 body{background-color:#111;}
+
+/*****************************************
+****************************************** main-visual
+******************************************/
+#main_visual_wr .vis_img_wr img {width:100%;}
+#main_visual_wr .vis_text_wr {position:absolute; top:50%; transform:translate(-50%,-50%); color:#fff; max-width: 1600px; width:90%; left: 50%;}
+#main_visual_wr .vis_text_wr .tit {padding-bottom:20px; font-size:80px; word-break:keep-all;}
+#main_visual_wr .vis_text_wr .text {font-size:20px; word-break:keep-all;}
+#main_visual_wr .swiper_btn_wr {position: absolute; width:90%; top: 33.5%; max-width: 1600px; left: 50%; transform:translateX(-50%); z-index:10;}
+#main_visual_wr .swiper_btn_wr .swiper-pagination {width:auto; margin-left:10px;}
+#main_visual_wr .swiper_btn_wr .swiper_play_btn_wr {padding-left:100px; position:relative;}
+#main_visual_wr .swiper_btn_wr .swiper_play_btn {position:absolute; cursor:pointer;}
+#main_visual_wr .swiper_btn_wr .swiper-button-play {display:none;}
+#main_visual_wr .swiper-pagination-bullet {background: #DBDBDB; opacity: 1;width: 5px; height: 5px; position:relative; margin-right:20px;}
+#main_visual_wr .swiper-pagination-bullet:before {content:"";    position: absolute; width:400%; height:400%; border: 1px solid transparent; border-radius: 100%; top:50%; left:50%; transform:translate(-50%,-50%);}
+#main_visual_wr .swiper-pagination-bullet-active {background-color:#00712F;}
+#main_visual_wr .swiper-pagination-bullet-active:before {border: 1px solid #00712F;}
+
+#main_visual_wr {position:relative;}
+#main_visual_wr .scroll_wr {position:absolute; bottom: 0; max-width: 1600px; width: 100%; left: 50%; transform:translateX(-50%); z-index:10;} 
+#main_visual_wr .scroll_wr .scroll_text {color:#fff; font-size:10px; transform:rotate(-90deg); display:inline-block; position: relative; top:-73px;}
+#main_visual_wr .scroll_wr .scroll_text:before {content:""; position: absolute; width: 25px; height: 1px; background: #fff; top: 50%; transform: translateY(-50%); left: -40px;}
+
+#main_visual_wr .vis_text_wr.en .tit {font-size:68px;}
