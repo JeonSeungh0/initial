@@ -120,6 +120,8 @@ select::-ms-expand { display: none; }
 
 .hide{display:none !important;}
 .sound_only{display:none;}
+.hidden1024 {}
+.visible1024 {display:none;}
 .hidden768 {}
 .visible768 {display:none;}
 .hidden570 {}
