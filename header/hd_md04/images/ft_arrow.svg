@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.898" height="11.898" viewBox="0 0 11.898 11.898">
+  <g id="arrow" transform="translate(-1.991 8.846) rotate(-45)">
+    <line id="선_12" data-name="선 12" x2="3.566" y2="3.566" transform="translate(6.823)" fill="none" stroke="#999" stroke-linecap="square" stroke-width="1.5"/>
+    <line id="선_13" data-name="선 13" x1="3.566" y2="3.566" transform="translate(6.823 3.566)" fill="none" stroke="#999" stroke-linecap="square" stroke-width="1.5"/>
+    <line id="선_14" data-name="선 14" x1="10.262" transform="translate(0 3.566)" fill="none" stroke="#999" stroke-width="1.5"/>
+  </g>
+</svg>
